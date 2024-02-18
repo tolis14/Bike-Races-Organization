@@ -1,0 +1,158 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>450</x><y>60</y><w>160</w><h>200</h></coordinates><panel_attributes>User
+-
+firstName: String
+lastName: String
+password :String
+email: Email
+--
+getFirstName() :String
+setFirstName(String) 
+getLastName() : String
+setLastName(String) 
+setEmail(Email)
+getEmail(): Email 
+setPassword(String)
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>340</y><w>140</w><h>80</h></coordinates><panel_attributes>Organizer
+-
+team: String
+--
+getTeam(): String
+setTeam(String)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>230</y><w>330</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>310;10;10;10;10;110</additional_attributes></element><element><id>UMLClass</id><coordinates><x>470</x><y>320</y><w>170</w><h>120</h></coordinates><panel_attributes>Sponsor
+-
+company: String
+card: Card
+--
+getCompany(): String 
+setCompany(String)
+getCard(): Card 
+setCard(Card)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>250</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>830</x><y>330</y><w>120</w><h>80</h></coordinates><panel_attributes>Competitor
+-
+card: Card
+--
+getCard(): Card
+setCard(Card)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>230</y><w>310</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;290;10;290;100</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1030</x><y>330</y><w>120</w><h>80</h></coordinates><panel_attributes>Referee
+-
+id: String
+--
+setId()
+getId():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>180</y><w>510</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;490;10;490;150</additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>480</y><w>180</w><h>260</h></coordinates><panel_attributes>ApplicationSponsorship
+-
+id: String
+amount: Money
+date: Date
+isApproved: boolean
+--
+setId()
+getAmount():Money 
+setAmount(double)
+getDate(): Date 
+isApproved(): boolean 
+setApproved(boolean) 
+getSponsor() : Sponsor
+getSponsorship() : Sponsorship
+setSponsorship(Sponsorship) 
+getPayment() :Payment
+setPayment(Payment) 
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>170</x><y>840</y><w>170</w><h>130</h></coordinates><panel_attributes>Sponsorship
+-
+description: String
+isPaid: boolean
+--
+getDescription() : String 
+setDescription(String)
+isPaid() : boolean 
+setPaid(boolean)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>730</y><w>50</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..1
+m2=1</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>350</y><w>180</w><h>150</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+m2=*</panel_attributes><additional_attributes>160;10;10;10;10;130</additional_attributes></element><element><id>UMLClass</id><coordinates><x>580</x><y>450</y><w>170</w><h>140</h></coordinates><panel_attributes>Payment
+-
+amount: Money
+date: Date
+transactionId: String
+--
+setTransactionId()
+getTransactionId(): String
+getDate(): Date
+getAmount(): Money 
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>520</y><w>190</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..1
+m2=1</panel_attributes><additional_attributes>170;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>600</x><y>750</y><w>220</w><h>590</h></coordinates><panel_attributes>Race
+-
+id: String
+name: String
+place: Place
+date: Date
+type: String
+distance: String
+sponsRequirements: String
+dueTime: DateRange
+cost: Money
+minGatheredAmount: Money
+--
+shouldRaceBeConducted(): boolean 
+hasMinCostComplete(): boolean 
+addSponsorshipApplication(SponsorshipApplication)
+addParticipant(Participation)
+getNumParticipations(): int 
+setId()
+setReferee(Referee)
+getId(): String 
+getName(): String 
+getPlace(): Place 
+getDate(): Date 
+setDate(Date)
+getType(): RaceType 
+getCost():  Money 
+getDistance(): int 
+setDistance(int)
+getSponsRequirements(): String 
+setSponsRequirements(String)
+getDueTime(): Date 
+setDueTime(Date)
+getParticipations(): Set&lt;Participation&gt; 
+getSponsorshipApplications(): Set&lt;SponsorshipApplication&gt; 
+getReferee(): Referee 
+getOrganizer(): Organizer 
+getMinGatheredAmount(): Money 
+setMinGatheredAmount(Money)
+setOrganizer(Organizer)
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>390</x><y>730</y><w>230</w><h>180</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+m2=1</panel_attributes><additional_attributes>10;10;10;150;210;150</additional_attributes></element><element><id>Relation</id><coordinates><x>90</x><y>410</y><w>530</w><h>620</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+m2=*</panel_attributes><additional_attributes>10;10;10;590;510;590</additional_attributes></element><element><id>Relation</id><coordinates><x>810</x><y>400</y><w>320</w><h>630</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+m2=*</panel_attributes><additional_attributes>290;10;290;600;10;600</additional_attributes></element><element><id>UMLClass</id><coordinates><x>910</x><y>580</y><w>170</w><h>260</h></coordinates><panel_attributes>Participation
+-
+id: int
+date: Date
+isPaid: boolean
+finishTime: Time
+--
+getId(): int 
+generateId()
+getDate(): Date 
+isPaid(): boolean
+setPaid(boolean)
+getFinishTime(): double 
+setFinishTime(double)
+getCompetitor(): Competitor  
+getRace(): Race 
+getPayment():Payment 
+setPayment(Payment) 
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>880</x><y>400</y><w>120</w><h>200</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+m2=*</panel_attributes><additional_attributes>10;10;10;90;100;90;100;180</additional_attributes></element><element><id>Relation</id><coordinates><x>810</x><y>830</y><w>210</w><h>90</h></coordinates><panel_attributes>lt=&lt;-&gt;
+m1=*
+m2=1</panel_attributes><additional_attributes>190;10;190;60;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>650</x><y>580</y><w>280</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+m2=1</panel_attributes><additional_attributes>10;10;10;70;260;70</additional_attributes></element></diagram>

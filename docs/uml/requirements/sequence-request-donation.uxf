@@ -1,0 +1,100 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLGeneric</id><coordinates><x>178</x><y>41</y><w>140</w><h>80</h></coordinates><panel_attributes>
+fontsize=14
+
+*:Διεπαφή χορηγίας*
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>388</x><y>141</y><w>20</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>388</x><y>111</y><w>30</w><h>50</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;30</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>328</x><y>41</y><w>160</w><h>80</h></coordinates><panel_attributes>
+fontsize=14
+
+*:Ελεγκτής εισαγωγών*</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>248</x><y>111</y><w>30</w><h>50</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;30</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>248</x><y>141</y><w>20</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>278</x><y>31</y><w>40</w><h>50</h></coordinates><panel_attributes>customelement=
+drawCircle(25, 25, 10)
+drawLine(10, 25, 15, 25)
+drawLine(10, 15, 10, 35)
+	</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>448</x><y>31</y><w>40</w><h>40</h></coordinates><panel_attributes>customelement=
+drawCircle(25, 25, 10)
+drawLine(22, 15.5, 27, 10.5)
+drawLine(22, 15.5, 27, 20.5)
+	</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>108</x><y>111</y><w>30</w><h>50</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;30</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>108</x><y>141</y><w>20</w><h>740</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLActor</id><coordinates><x>78</x><y>11</y><w>80</w><h>110</h></coordinates><panel_attributes>fontsize=14
+*:Χορηγός*</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>328</x><y>491</y><w>420</w><h>220</h></coordinates><panel_attributes>loop
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>118</x><y>421</y><w>150</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+m1pos=10,-24
+m1=Επιλογή χορήγησης</panel_attributes><additional_attributes>130;30;10;30</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>498</x><y>41</y><w>100</w><h>80</h></coordinates><panel_attributes>
+
+fontsize=14
+*:Αγώνας*
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>558</x><y>31</y><w>40</w><h>40</h></coordinates><panel_attributes>customelement=
+drawCircle(25, 25, 10)
+drawLine(15, 35, 35, 35)
+	</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>538</x><y>111</y><w>30</w><h>30</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;10</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>538</x><y>141</y><w>20</w><h>80</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>638</x><y>391</y><w>140</w><h>80</h></coordinates><panel_attributes>
+
+fontsize=14
+*:Αίτηση χορηγίας*
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>738</x><y>381</y><w>40</w><h>40</h></coordinates><panel_attributes>customelement=
+drawCircle(25, 25, 10)
+drawLine(15, 35, 35, 35)
+	</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>798</x><y>671</y><w>80</w><h>80</h></coordinates><panel_attributes>
+
+fontsize=14
+*:Χορηγία*
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>838</x><y>661</y><w>40</w><h>40</h></coordinates><panel_attributes>customelement=
+drawCircle(25, 25, 10)
+drawLine(15, 35, 35, 35)
+	</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>828</x><y>781</y><w>30</w><h>40</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>698</x><y>461</y><w>30</w><h>30</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>118</x><y>251</y><w>150</w><h>40</h></coordinates><panel_attributes>lt=-&gt;&gt;&gt;
+Επιλογή αγώνα</panel_attributes><additional_attributes>10;20;130;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>248</x><y>251</y><w>20</w><h>170</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>258</x><y>271</y><w>150</w><h>40</h></coordinates><panel_attributes>lt=-&gt;&gt;&gt;
+Επιλογή αγώνα(id)</panel_attributes><additional_attributes>10;20;130;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>388</x><y>251</y><w>20</w><h>70</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>548</x><y>301</y><w>160</w><h>70</h></coordinates><panel_attributes>lt=-&gt;&gt;&gt;
+m2pos=-15,-50
+m1=χορηγίας(id)
+m2=Έλεγχος διαθεσιμότητας 
+</panel_attributes><additional_attributes>10;20;120;20;120;50;10;50</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>538</x><y>291</y><w>20</w><h>90</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>398</x><y>281</y><w>160</w><h>40</h></coordinates><panel_attributes>lt=-&gt;&gt;&gt;
+Χορηγία αγώνα(id)</panel_attributes><additional_attributes>10;20;140;20</additional_attributes></element><element><id>Relation</id><coordinates><x>258</x><y>351</y><w>300</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
+   get πληροφοριές   χορήγησης αγώνα()</panel_attributes><additional_attributes>10;20;280;20</additional_attributes></element><element><id>Relation</id><coordinates><x>118</x><y>371</y><w>150</w><h>50</h></coordinates><panel_attributes>lt=&lt;.
+m1pos=5,-22
+m1=Πληροφοριές</panel_attributes><additional_attributes>10;30;130;30</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>248</x><y>451</y><w>20</w><h>410</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>258</x><y>431</y><w>150</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+m1pos=10,-23
+m2pos=-15,5
+m1=set φόρμα χορηγίας
+m2=(id,ποσό,ημερομηνία)</panel_attributes><additional_attributes>130;30;10;30</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>388</x><y>461</y><w>20</w><h>370</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>698</x><y>511</y><w>20</w><h>20</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>398</x><y>491</y><w>320</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+m1pos=10,-23
+m1=set id χορηγίας(id)
+</panel_attributes><additional_attributes>300;30;10;30</additional_attributes></element><element><id>Relation</id><coordinates><x>398</x><y>521</y><w>320</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+m1pos=15,-23
+m1=set ποσό χορηγίας(ποσό)
+</panel_attributes><additional_attributes>300;30;10;30</additional_attributes></element><element><id>Relation</id><coordinates><x>398</x><y>551</y><w>320</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+m1pos=15,-23
+m2pos=150,0
+m1=set ημερομηνία χορηγίας
+m2=(ημερομηνία)
+</panel_attributes><additional_attributes>300;30;10;30</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>698</x><y>541</y><w>20</w><h>20</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>398</x><y>641</y><w>160</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+m1pos=-10,-40
+m2pos=-10,-20
+m2=Έλεγχος φόρμας
+m1=(id,ποσό,ημερομηνία)</panel_attributes><additional_attributes>10;60;140;60;140;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>698</x><y>571</y><w>20</w><h>90</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>398</x><y>601</y><w>320</w><h>50</h></coordinates><panel_attributes>lt=.&gt;
+m1pos=10,-23
+m2pos=-15,5
+m1=get φόρμα χορηγίας()
+</panel_attributes><additional_attributes>300;30;10;30</additional_attributes></element><element><id>Relation</id><coordinates><x>398</x><y>701</y><w>420</w><h>50</h></coordinates><panel_attributes>lt=&lt;.
+m1pos=-100,-23
+m1=create
+</panel_attributes><additional_attributes>400;30;10;30</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>828</x><y>801</y><w>20</w><h>50</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>388</x><y>211</y><w>30</w><h>60</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>Relation</id><coordinates><x>388</x><y>311</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>Relation</id><coordinates><x>388</x><y>821</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>108</x><y>871</y><w>30</w><h>60</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;40;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>248</x><y>851</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>248</x><y>211</y><w>30</w><h>60</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>Relation</id><coordinates><x>248</x><y>411</y><w>30</w><h>60</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>Relation</id><coordinates><x>538</x><y>111</y><w>30</w><h>50</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;30</additional_attributes></element><element><id>Relation</id><coordinates><x>538</x><y>211</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>538</x><y>371</y><w>30</w><h>560</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;540</additional_attributes></element><element><id>Relation</id><coordinates><x>398</x><y>441</y><w>260</w><h>50</h></coordinates><panel_attributes>lt=&lt;.
+m1pos=-100,-23
+m1=create
+</panel_attributes><additional_attributes>240;30;10;30</additional_attributes></element><element><id>Relation</id><coordinates><x>698</x><y>521</y><w>30</w><h>40</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>698</x><y>551</y><w>30</w><h>40</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>698</x><y>651</y><w>30</w><h>280</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;260</additional_attributes></element><element><id>Relation</id><coordinates><x>398</x><y>751</y><w>450</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+m1pos=15,-23
+m1=set περιγραφή χορηγίας(περιγραφή)
+
+</panel_attributes><additional_attributes>430;30;10;30</additional_attributes></element><element><id>Relation</id><coordinates><x>398</x><y>781</y><w>450</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+m1pos=-130,-23
+m1=set boolean εξόφλησης(εξοφλημένη)
+
+</panel_attributes><additional_attributes>430;30;10;30</additional_attributes></element><element><id>Relation</id><coordinates><x>258</x><y>811</y><w>590</w><h>50</h></coordinates><panel_attributes>lt=.&gt;
+m1pos=13,-23
+m1=get boolean εξόφλησης()
+</panel_attributes><additional_attributes>570;30;10;30</additional_attributes></element><element><id>Relation</id><coordinates><x>118</x><y>831</y><w>150</w><h>50</h></coordinates><panel_attributes>lt=.&gt;
+m1pos=21,-23
+m1=Κατάσταση εξόφλησης
+</panel_attributes><additional_attributes>130;30;10;30</additional_attributes></element><element><id>Relation</id><coordinates><x>828</x><y>841</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>78</x><y>161</y><w>530</w><h>50</h></coordinates><panel_attributes>ref
+--
+Αναζήτηση
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>698</x><y>461</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Text</id><coordinates><x>428</x><y>495</y><w>120</w><h>70</h></coordinates><panel_attributes>*[wrong input data]*
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>828</x><y>771</y><w>20</w><h>20</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>828</x><y>741</y><w>30</w><h>50</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;30</additional_attributes></element></diagram>

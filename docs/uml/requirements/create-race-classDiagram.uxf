@@ -1,0 +1,122 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>40</x><y>20</y><w>250</w><h>260</h></coordinates><panel_attributes>CreateRaceActivity
+--
+- edtCreateRaceName: String
+- edtCreateRacePlace: String
+- edtCreateRaceDate: String
+- edtCreateRaceType: String 
+- edtCreateRaceDistance: String
+- edtDeadLine: String
+- edtRaceCreateAmt: String
+- edtRaceCreateMinGatheredAmt : String
+- status: String
+- error: String
+--
++ showError(String errorMsg)
++ showStatus(String statusMsg)
+# onCreate()
+- createRace()
+- clearMessages()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>40</x><y>340</y><w>210</w><h>120</h></coordinates><panel_attributes>CreateRaceViewModel
+--
+
+--
++ getPresenter(): CreateRacePresenter
+# onCleared()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>130</x><y>270</y><w>40</w><h>90</h></coordinates><panel_attributes>lt=&lt;-
+m1=1</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>40</x><y>530</y><w>530</w><h>320</h></coordinates><panel_attributes>CreateRacePresenter
+--
+
+--
++ setRaceDAO(RaceDAO raceDAO)
++ setOrganizerDAO(OrganizerDAO organizerDAO)
++ setView(CreateRaceView view)
+
++ createRace(String organizerID, String raceName, String racePlace, String raceDate,
+                       String raceType, String raceDistance, String deadLine, String raceAmt,
+                       String minRaceAmt)
+
+- validateFieldNotMissing(String organizerID, String raceName, String racePlace, String raceDate,
+                       String raceType, String raceDistance, String deadLine, String raceAmt,
+                       String minRaceAmt):Boolean
+
+- validateInputData(String racePlace, String raceType, String raceDistance,
+                                      String raceAmt, String minRaceAmt):Boolean
+
+-validateDateInput(String raceDate, String raceDueDate):Boolean
+-validateNotAnotherRaceSameDatePlace(String racePlace, Date raceDate): Boolean
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>130</x><y>450</y><w>40</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+m1=1</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>700</x><y>20</y><w>230</w><h>120</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+CreateRaceView
+--
+
+--
+showError(String errorMsg)
+showStatus(String status)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>20</y><w>440</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>420;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>430</x><y>20</y><w>50</w><h>80</h></coordinates><panel_attributes>lt=.()</panel_attributes><additional_attributes>10;60;30;10</additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>110</y><w>200</w><h>440</h></coordinates><panel_attributes>lt=&lt;-
+m1=1</panel_attributes><additional_attributes>180;10;10;10;10;420</additional_attributes></element><element><id>UMLClass</id><coordinates><x>800</x><y>480</y><w>370</w><h>270</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+RaceDAO
+--
+
+--
+delete()
+save(Race entity)
+findAll(): List&lt;Race&gt;
+find(String raceName, String city, String location, Date date, 
+       RaceType type, int distance): Set&lt;Race&gt;
+findById(String id): Race
+findByOrganizer(String organizerID): Set&lt;Race&gt;
+findByPlaceDate(String city, String location, Date date): Set&lt;Race&gt;
+findByRef(String id): ArrayList&lt;Race&gt;
+getParticipants(String id): Set&lt;Participation&gt;
+getHistory(String id): ArrayList&lt;Race&gt;
+getPlace(String raceId,String partID): int 
+getOngoing(String id): ArrayList&lt;Race&gt;
+clear()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>610</y><w>260</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+m1=1</panel_attributes><additional_attributes>240;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>810</x><y>210</y><w>340</w><h>160</h></coordinates><panel_attributes>&lt;interface&gt;&gt;
+OrganizerDAO
+--
+
+--
+save(Organizer entity)
+findAll(): List&lt;Organizer&gt;
+find(String userName, String password,String mail): Organizer
+findById(String id): Organizer
+clear()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>370</x><y>80</y><w>140</w><h>70</h></coordinates><panel_attributes>Interface
+Implementation</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>220</y><w>280</w><h>330</h></coordinates><panel_attributes>lt=&lt;-
+m1=1</panel_attributes><additional_attributes>260;10;10;10;10;310</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1380</x><y>210</y><w>340</w><h>160</h></coordinates><panel_attributes>OrganizerDAOMemory
+--
+
+--
+save(Organizer entity)
+findAll(): List&lt;Organizer&gt;
+find(String userName, String password,String mail): Organizer
+findById(String id): Organizer
+clear()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1140</x><y>220</y><w>260</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;240;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1220</x><y>120</y><w>90</w><h>130</h></coordinates><panel_attributes>lt=.()</panel_attributes><additional_attributes>70;10;10;110</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1420</x><y>60</y><w>100</w><h>40</h></coordinates><panel_attributes>Organizer</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1460</x><y>90</y><w>30</w><h>140</h></coordinates><panel_attributes>lt=&lt;-
+m1=*</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>UMLNote</id><coordinates><x>1590</x><y>60</y><w>140</w><h>70</h></coordinates><panel_attributes>View domain model
+class diagram
+for more inforamtion
+on class Organizer</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1510</x><y>70</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;80;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1370</x><y>480</y><w>370</w><h>270</h></coordinates><panel_attributes>RaceDAOMemory
+--
+
+--
+delete()
+save(Race entity)
+findAll(): List&lt;Race&gt;
+find(String raceName, String city, String location, Date date, 
+       RaceType type, int distance): Set&lt;Race&gt;
+findById(String id): Race
+findByOrganizer(String organizerID): Set&lt;Race&gt;
+findByPlaceDate(String city, String location, Date date): Set&lt;Race&gt;
+findByRef(String id): ArrayList&lt;Race&gt;
+getParticipants(String id): Set&lt;Participation&gt;
+getHistory(String id): ArrayList&lt;Race&gt;
+getPlace(String raceId,String partID): int 
+getOngoing(String id): ArrayList&lt;Race&gt;
+clear()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1160</x><y>490</y><w>230</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;210;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>1130</x><y>800</y><w>140</w><h>70</h></coordinates><panel_attributes>Interface
+Implementation</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1190</x><y>490</y><w>170</w><h>330</h></coordinates><panel_attributes>lt=.()</panel_attributes><additional_attributes>10;310;150;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1410</x><y>840</y><w>100</w><h>40</h></coordinates><panel_attributes>Race</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>1610</x><y>830</y><w>140</w><h>70</h></coordinates><panel_attributes>View domain model
+class diagram
+for more inforamtion
+on class Race</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1600</x><y>840</y><w>30</w><h>30</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1450</x><y>740</y><w>30</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+m1=*</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1500</x><y>850</y><w>130</w><h>30</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;110;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>1230</x><y>60</y><w>140</w><h>70</h></coordinates><panel_attributes>Interface
+Implementation</panel_attributes><additional_attributes></additional_attributes></element></diagram>

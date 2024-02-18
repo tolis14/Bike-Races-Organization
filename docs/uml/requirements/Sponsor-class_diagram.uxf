@@ -1,0 +1,118 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>114</x><y>206</y><w>250</w><h>230</h></coordinates><panel_attributes>SponsorActivity
+--
+-sponsor_button: MaterialButton 
+-sponsorship_money_view: TextView 
+-statusMessage: TextView 
+-viewModel: SponsorViewModel 
+- returnValue: String
+-sponsorship_money: String 
+- sponsorBalance: TextView 
+- id: String
+--
++ShowMessage(String text)
++go_to_search()
+# onCreate()
++openRaceSearch()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>114</x><y>526</y><w>210</w><h>120</h></coordinates><panel_attributes>SponsorViewModel
+--
+
+--
++ getPresenter(): SponsorPresenter
+# onCleared()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>204</x><y>426</y><w>40</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+m1=1</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>114</x><y>716</y><w>530</w><h>320</h></coordinates><panel_attributes>SponsorPresenter
+--
+-race: Race 
+-sponsor: Sponsor 
+-view: SponsorView 
+-SponsorDAO: SponsorDAO 
+-RaceDAO: RaceDAO 
+--
++ getview(): SponsorView
++ setRaceDAO(RaceDAO raceDAO)
++ getRaceDAO(): RaceDAO
++ setSponsorDAO(SponsorDAO SponsorDAO)
++ getSponsorDAO(): SponsorDAO
++ setView(SponsorView view)
++ getSponsor(): Sponsor
++ createsponsor(String id)
++ validatemoney(String race_id, double sponsor_money): boolean
++ addsponsorshipapplication(String race_id, doublesponsor_money)
++ validateSponsor(String money): boolean
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>204</x><y>636</y><w>40</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+m1=1</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>774</x><y>206</y><w>230</w><h>120</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+SponsorView
+--
+
+--
+ShowMessage(String text)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>354</x><y>206</y><w>440</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>420;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>504</x><y>206</y><w>50</w><h>80</h></coordinates><panel_attributes>lt=.()</panel_attributes><additional_attributes>10;60;30;10</additional_attributes></element><element><id>Relation</id><coordinates><x>594</x><y>296</y><w>200</w><h>440</h></coordinates><panel_attributes>lt=&lt;-
+m1=1</panel_attributes><additional_attributes>180;10;10;10;10;420</additional_attributes></element><element><id>UMLClass</id><coordinates><x>874</x><y>666</y><w>370</w><h>270</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+RaceDAO
+--
+
+--
+delete()
+save(Race entity)
+findAll(): List&lt;Race&gt;
+find(String raceName, String city, String location, Date date, 
+       RaceType type, int distance): Set&lt;Race&gt;
+findById(String id): Race
+findByOrganizer(String organizerID): Set&lt;Race&gt;
+findByPlaceDate(String city, String location, Date date): Set&lt;Race&gt;
+findByRef(String id): ArrayList&lt;Race&gt;
+getParticipants(String id): Set&lt;Participation&gt;
+getHistory(String id): ArrayList&lt;Race&gt;
+getPlace(String raceId,String partID): int 
+getOngoing(String id): ArrayList&lt;Race&gt;
+clear()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>634</x><y>796</y><w>260</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+m1=1</panel_attributes><additional_attributes>240;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>884</x><y>396</y><w>340</w><h>160</h></coordinates><panel_attributes>&lt;interface&gt;&gt;
+SponsorDAO
+--
+
+--
+save(Sponsor entity)
+findAll(): List&lt;Sponsor&gt;
+findbyid(String id): Sponsor
+find(String userName, String Password,String mail): Sponsor
+clear()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>444</x><y>266</y><w>140</w><h>70</h></coordinates><panel_attributes>Interface
+Implementation</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>624</x><y>406</y><w>280</w><h>330</h></coordinates><panel_attributes>lt=&lt;-
+m1=1</panel_attributes><additional_attributes>260;10;10;10;10;310</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1454</x><y>396</y><w>340</w><h>160</h></coordinates><panel_attributes>OrganizerDAOMemory
+--
+
+--
+save(Sponsor entity)
+findAll(): List&lt;Sponsor&gt;
+findbyid(String id): Sponsor
+find(String userName, String Password,String mail): Sponsor
+clear()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1214</x><y>406</y><w>260</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;240;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1294</x><y>306</y><w>90</w><h>130</h></coordinates><panel_attributes>lt=.()</panel_attributes><additional_attributes>70;10;10;110</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1494</x><y>246</y><w>100</w><h>40</h></coordinates><panel_attributes>Sponsor</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1534</x><y>276</y><w>30</w><h>140</h></coordinates><panel_attributes>lt=&lt;-
+m1=*</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>UMLNote</id><coordinates><x>1664</x><y>246</y><w>140</w><h>70</h></coordinates><panel_attributes>View domain model
+class diagram
+for more inforamtion
+on class Sponsor</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1584</x><y>256</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;80;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1444</x><y>666</y><w>370</w><h>270</h></coordinates><panel_attributes>RaceDAOMemory
+--
+
+--
+delete()
+save(Race entity)
+findAll(): List&lt;Race&gt;
+find(String raceName, String city, String location, Date date, 
+       RaceType type, int distance): Set&lt;Race&gt;
+findById(String id): Race
+findByOrganizer(String organizerID): Set&lt;Race&gt;
+findByPlaceDate(String city, String location, Date date): Set&lt;Race&gt;
+findByRef(String id): ArrayList&lt;Race&gt;
+getParticipants(String id): Set&lt;Participation&gt;
+getHistory(String id): ArrayList&lt;Race&gt;
+getPlace(String raceId,String partID): int 
+getOngoing(String id): ArrayList&lt;Race&gt;
+clear()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1234</x><y>676</y><w>230</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;210;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>1204</x><y>986</y><w>140</w><h>70</h></coordinates><panel_attributes>Interface
+Implementation</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1264</x><y>676</y><w>170</w><h>330</h></coordinates><panel_attributes>lt=.()</panel_attributes><additional_attributes>10;310;150;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1484</x><y>1026</y><w>100</w><h>40</h></coordinates><panel_attributes>Race</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>1684</x><y>1016</y><w>140</w><h>70</h></coordinates><panel_attributes>View domain model
+class diagram
+for more inforamtion
+on class Race</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1674</x><y>1026</y><w>30</w><h>30</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1524</x><y>926</y><w>30</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+m1=*</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1574</x><y>1036</y><w>130</w><h>30</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;110;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>1304</x><y>246</y><w>140</w><h>70</h></coordinates><panel_attributes>Interface
+Implementation</panel_attributes><additional_attributes></additional_attributes></element></diagram>

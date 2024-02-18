@@ -1,0 +1,71 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagramχρόνοςΤερματισμού: TimeχρόνοςΤερματισμού: TimeχρόνοςΤερματισμού: TimeχρόνοςΤερματισμού: Time</help_text><element><id>UMLClass</id><coordinates><x>740</x><y>100</y><w>140</w><h>80</h></coordinates><panel_attributes>Χρήστης
+--
+όνομα: String
+επώνυμο: String
+email: Email</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>40</x><y>220</y><w>140</w><h>80</h></coordinates><panel_attributes>Διοργανωτής
+--
+Σύλλογος: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1150</x><y>220</y><w>140</w><h>80</h></coordinates><panel_attributes>Διαγωνιζόμενος
+--
+κάρτα: Card
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>700</x><y>230</y><w>140</w><h>80</h></coordinates><panel_attributes>Χορηγός
+--
+εταιρία: String
+κάρτα: Card</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1340</x><y>220</y><w>140</w><h>80</h></coordinates><panel_attributes>Κριτής
+--
+id: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>770</x><y>170</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>870</x><y>110</y><w>560</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;540;10;540;110</additional_attributes></element><element><id>Relation</id><coordinates><x>870</x><y>140</y><w>370</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;350;10;350;80</additional_attributes></element><element><id>Relation</id><coordinates><x>100</x><y>150</y><w>660</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>640;10;10;10;10;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>690</x><y>660</y><w>190</w><h>160</h></coordinates><panel_attributes>Αγώνας
+--
+id: String
+όνομα: String
+τόπος: String
+ημερομηνία: Date
+τύπος: String
+απόσταση: Distance
+/απαιτούμενοΠοσό: Money
+απαιτησειςΧορηγίας: String
+προθεσμίαΑιτήσεων: dateRange</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>100</x><y>290</y><w>610</w><h>540</h></coordinates><panel_attributes>
+m1=1
+m2=*
+διοργανώνει &gt;</panel_attributes><additional_attributes>10;10;10;510;590;510</additional_attributes></element><element><id>Relation</id><coordinates><x>870</x><y>290</y><w>600</w><h>530</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=*
+&lt; κρίνει</panel_attributes><additional_attributes>540;10;540;500;10;500</additional_attributes></element><element><id>UMLClass</id><coordinates><x>220</x><y>450</y><w>140</w><h>80</h></coordinates><panel_attributes>Χορηγία
+--
+περιγραφή: String
+εξοφλημένη: Boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>510</x><y>250</y><w>210</w><h>110</h></coordinates><panel_attributes>&lt; εκδίδει
+
+
+
+
+lt=-
+m1=*
+m2=1
+ </panel_attributes><additional_attributes>10;20;190;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>380</x><y>220</y><w>140</w><h>90</h></coordinates><panel_attributes>Αίτηση χορηγίας
+--
+id: String
+ποσό: Money
+ημερομηνία: Date
+κατάσταση: Boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>240</y><w>70</w><h>230</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=0...1
+</panel_attributes><additional_attributes>50;20;10;20;10;210</additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>300</y><w>270</w><h>450</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=*</panel_attributes><additional_attributes>250;420;10;420;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>940</x><y>410</y><w>170</w><h>100</h></coordinates><panel_attributes>Συμμετοχή
+--
+αριθμόςΣυμμετοχής: int
+ημερομηνίαΣυμμετοχής: Date
+ποσόΣυμμετοχής: Money
+εξοφλημένη: Boolean
+χρόνοςΤερματισμού: Time</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>870</x><y>290</y><w>440</w><h>440</h></coordinates><panel_attributes>lt=-
+m1=*
+m2=*
+&lt; συμμετέχει</panel_attributes><additional_attributes>350;10;350;410;10;410</additional_attributes></element><element><id>Relation</id><coordinates><x>1100</x><y>450</y><w>140</w><h>30</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;120;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>660</x><y>410</y><w>170</w><h>90</h></coordinates><panel_attributes>Πληρωμή
+--
+ποσό: Money
+ημερομηνία: Date
+idΣυναλλαγής: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>820</x><y>430</y><w>140</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1
+ </panel_attributes><additional_attributes>10;20;120;20</additional_attributes></element><element><id>Relation</id><coordinates><x>500</x><y>300</y><w>180</w><h>180</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=0..1
+ </panel_attributes><additional_attributes>10;10;10;150;160;150</additional_attributes></element></diagram>

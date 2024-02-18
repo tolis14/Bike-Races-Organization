@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/paras/Downloads/team02/app/app/src/main/res/layout/activity_sign_up.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/paras/Downloads/team02/app/app/src/main/res/layout/activity_sponsor.xml" value="0.25416666666666665" />
+        <entry key="..\:/VisualStudio/Code/TL/team02/app/app/src/main/res/layout/activity_history.xml" value="0.36666666666666664" />
+        <entry key="..\:/VisualStudio/Code/TL/team02/app/app/src/main/res/layout/activity_ongoing.xml" value="0.25" />
+        <entry key="..\:/VisualStudio/Code/TL/team02/app/app/src/main/res/layout/activity_referee_race.xml" value="0.36666666666666664" />
+        <entry key="..\:/VisualStudio/Code/TL/team02/app/app/src/main/res/layout/content_ongoing.xml" value="0.36666666666666664" />
+        <entry key="..\:/VisualStudio/Code/TL/team02/app/app/src/main/res/layout/fragment_first.xml" value="0.36666666666666664" />
+        <entry key="..\:/VisualStudio/Code/TL/team02/app/app/src/main/res/layout/fragment_second.xml" value="0.36666666666666664" />
+        <entry key="..\:/university/assignments/software_eng/team02/app/app/src/main/res/layout/activity_approve_sponsorship.xml" value="0.36666666666666664" />
+        <entry key="..\:/university/assignments/software_eng/team02/app/app/src/main/res/layout/activity_competitor_starting_acitvity.xml" value="0.35260416666666666" />
+        <entry key="..\:/university/assignments/software_eng/team02/app/app/src/main/res/layout/activity_create_race.xml" value="0.36666666666666664" />
+        <entry key="..\:/university/assignments/software_eng/team02/app/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
+        <entry key="..\:/university/assignments/software_eng/team02/app/app/src/main/res/layout/activity_main.xml" value="0.35260416666666666" />
+        <entry key="..\:/university/assignments/software_eng/team02/app/app/src/main/res/layout/activity_organizer_starting.xml" value="0.36666666666666664" />
+        <entry key="..\:/university/assignments/software_eng/team02/app/app/src/main/res/layout/activity_pop_up_window.xml" value="0.340625" />
+        <entry key="..\:/university/assignments/software_eng/team02/app/app/src/main/res/layout/activity_race_registration.xml" value="0.35104166666666664" />
+        <entry key="..\:/university/assignments/software_eng/team02/app/app/src/main/res/layout/activity_race_search.xml" value="0.3046875" />
+        <entry key="..\:/university/assignments/software_eng/team02/app/app/src/main/res/layout/activity_referee_rate.xml" value="0.2617753623188406" />
+        <entry key="..\:/university/assignments/software_eng/team02/app/app/src/main/res/layout/activity_sign_up.xml" value="0.30313588850174217" />
+        <entry key="..\:/university/assignments/software_eng/team02/app/app/src/main/res/layout/activity_sponsor.xml" value="0.3029411764705882" />
+        <entry key="..\:/university/assignments/software_eng/team02/app/app/src/main/res/layout/approve_sponsorship_item.xml" value="0.35104166666666664" />
+        <entry key="..\:/university/assignments/software_eng/team02/app/app/src/main/res/layout/race_item.xml" value="0.36666666666666664" />
+        <entry key="..\:/university/team02/app/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/university/team02/app/app/src/main/res/layout/activity_race_registration.xml" value="0.35104166666666664" />
+        <entry key="..\:/university/team02/app/app/src/main/res/layout/activity_race_search.xml" value="0.33697916666666666" />
+        <entry key="..\:/university/team02/app/app/src/main/res/layout/fragment_first.xml" value="0.36666666666666664" />
+        <entry key="..\:/university/team02/app/app/src/main/res/layout/race_item.xml" value="0.35104166666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

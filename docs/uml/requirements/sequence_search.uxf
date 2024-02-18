@@ -1,0 +1,65 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLGeneric</id><coordinates><x>603</x><y>190</y><w>100</w><h>30</h></coordinates><panel_attributes>:Διεπαφή
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>653</x><y>310</y><w>140</w><h>80</h></coordinates><panel_attributes>lt=-&gt;&gt;
+getRace
+(name, place,
+date, type,
+distance)</panel_attributes><additional_attributes>10;20;120;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>773</x><y>320</y><w>20</w><h>180</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>723</x><y>190</y><w>120</w><h>30</h></coordinates><panel_attributes>:Ελεγκτής εισαγωγής</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>643</x><y>290</y><w>20</w><h>270</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>613</x><y>110</y><w>80</w><h>80</h></coordinates><panel_attributes>// Boundary Element
+	     Σύνορο
+customelement=
+// Boundary Symbol
+drawCircle(50, 50, 20)
+drawLine(20, 50, 30, 50)
+drawLine(20, 30, 20, 70)
+	</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>733</x><y>110</y><w>80</w><h>80</h></coordinates><panel_attributes>// Control Element
+	      Έλεγχος
+customelement=
+// Control Symbol
+drawCircle(50, 50, 20)
+drawLine(44, 31, 54, 21)
+drawLine(44, 31, 54, 41)
+	</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>503</x><y>210</y><w>30</w><h>490</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;470</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>503</x><y>270</y><w>20</w><h>310</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>513</x><y>290</y><w>150</w><h>90</h></coordinates><panel_attributes>lt=-&gt;&gt;
+
+search
+(name, place,
+date, type,
+distance)</panel_attributes><additional_attributes>10;20;130;20</additional_attributes></element><element><id>UMLActor</id><coordinates><x>463</x><y>120</y><w>100</w><h>110</h></coordinates><panel_attributes>Διαγωνιζόμενος</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>653</x><y>460</y><w>140</w><h>40</h></coordinates><panel_attributes>lt=.&gt;&gt;
+raceInfo()</panel_attributes><additional_attributes>120;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>513</x><y>520</y><w>150</w><h>40</h></coordinates><panel_attributes>lt=.&gt;&gt;
+results()</panel_attributes><additional_attributes>130;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>873</x><y>190</y><w>110</w><h>30</h></coordinates><panel_attributes>:Αγώνας</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>883</x><y>110</y><w>90</w><h>80</h></coordinates><panel_attributes>// Entity Element
+	      Οντότητα
+customelement=
+// Entity Symbol
+drawCircle(50, 50, 20)
+drawLine(30, 70, 70, 70)
+	</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>643</x><y>210</y><w>30</w><h>490</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;470</additional_attributes></element><element><id>Relation</id><coordinates><x>773</x><y>210</y><w>30</w><h>490</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;470</additional_attributes></element><element><id>Relation</id><coordinates><x>913</x><y>210</y><w>30</w><h>490</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;470</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>913</x><y>390</y><w>20</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>783</x><y>390</y><w>150</w><h>80</h></coordinates><panel_attributes>lt=-&gt;&gt;
+getRaceInfo
+(name, place,
+date, type,
+distance)</panel_attributes><additional_attributes>10;20;130;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>373</x><y>230</y><w>670</w><h>420</h></coordinates><panel_attributes>sd αναζήτηση
+--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>
